@@ -11,8 +11,6 @@
 
 }
 
-
-
 body{
   padding-top: 6rem;
 }
@@ -136,11 +134,9 @@ body{
   border-radius: 5px;
 }
 
-
 button:hover {
   
   cursor: pointer;
-
 
 }
 button:active {
@@ -150,3 +146,55 @@ button:active {
 #last{
   color: gray;
 }
+
+/* Add this CSS at the end of your existing CSS file */
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #thumbnail {
+    flex-direction: column;
+  }
+
+  #home img {
+    width: 100%; /* Ensure images take up full width on smaller screens */
+    height: auto;
+    margin-left: 0; /* Reset margin */
+    margin-bottom: 1rem; /* Add space between images */
+  }
+
+  #content {
+    padding-left: 0; /* Reset padding */
+  }
+
+  #head {
+    margin-top: 1rem; /* Add space between heading and images on smaller screens */
+    text-align: center; /* Center the heading */
+  }
+
+  .button-list {
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center align buttons */
+  }
+
+  .bullet-button {
+    margin-right: 0.5rem; /* Add space between buttons */
+    margin-bottom: 0.5rem; /* Add space between rows of buttons */
+  }
+
+  .number {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+  }
+
+  #addtocart {
+    width: 100%; /* Make button full width */
+    margin-left: 0; /* Reset margin */
+  }
+
+  #last {
+    margin-top: 2rem; /* Add space between content and bottom paragraph */
+    padding: 0 1rem; /* Add padding to content */
+  }
+}
+
+
